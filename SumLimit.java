@@ -19,6 +19,21 @@ public class SumLimit {
     }
 
     public int sumLimit(int a, int b) {
+        int sum = 0;
+        while (sum<a)
+        {
+            sum += a+b;
+            String sum1 = Integer.toString(sum);
+            String a1 = Integer.toString(a);
+            if (sum1.length()<=a1.length())
+            {
+                return sum;
+            }
+            else {
+                return a;
+            }
+        }
+        return sum;
 
        //use while loop to complete this method.  You can use multiple loops, if you need.
 
