@@ -31,7 +31,7 @@ public class SumLimit2 {
                 sumDigits = sumDigits/10;
                 countSum++;
             }
-            if (countSum<=countA)
+            if (countSum <= countA)
             {
                 return sum;
             }
