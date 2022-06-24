@@ -14,24 +14,24 @@ public class SumLimit2 {
 
     public int sumLimit(int a, int b) {
         int sum = 0;
-        int counta = 0;
-        int countsum = 0;
-        int adigits = a;
-        while (adigits!=0)
+        int countA = 0;
+        int countSum = 0;
+        int aDigits = a;
+        while (aDigits!=0)
         {
-            adigits = adigits/10;
-            counta++;
+            aDigits = aDigits/10;
+            countA++;
         }
-        while (sum<a)
+        while (sum < a)
         {
-            sum += a+b;
-            int sumdigits = sum;
-            while(sumdigits!=0)
+            sum += a + b;
+            int sumDigits = sum;
+            while(sumDigits!=0)
             {
-                sumdigits = sumdigits/10;
-                countsum++;
+                sumDigits = sumDigits/10;
+                countSum++;
             }
-            if (countsum<=counta)
+            if (countSum<=countA)
             {
                 return sum;
             }
