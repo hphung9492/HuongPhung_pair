@@ -1,5 +1,5 @@
 /**
- * //complete here
+ *  make sure complete here, Huong. (June 26, 2022)
  *
  */
 
@@ -66,10 +66,12 @@ public class MakeChocolate {
         {
             smallNeeded = remainder;
         }
-        else if (remainder<0 && goal>4)
+        else if (remainder < 0 && goal > 4) //follow the style convention . I
+            // modified the format a little. From next time, please make sure keep
+            // the format convention.
         {
-            remainder = goal -5;
-            if (remainder>small)
+            remainder = goal - 5;//format
+            if (remainder > small) //format
             {
                 smallNeeded = -1;
             }
@@ -78,7 +80,7 @@ public class MakeChocolate {
                 smallNeeded = remainder;
             }
         }
-        else if(remainder<0 && goal<=4)
+        else if(remainder < 0 && goal <= 4) //format
         {
             smallNeeded = goal;
         }
