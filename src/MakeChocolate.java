@@ -5,10 +5,17 @@
 
 import java.util.Scanner;
 public class MakeChocolate {
-private Scanner sc;
+    private Scanner sc;
     public static void main(String[] args) {
-
-
+        MakeChocolate mc = new MakeChocolate();
+        mc.sc = new Scanner(System.in);
+        System.out.println("Please enter a small integer: ");
+        int small = mc.readNumber();
+        System.out.println("Please enter a big integer: ");
+        int big = mc.readNumber2();
+        System.out.println("Please enter a goal integer: ");
+        int goal = mc.readNumber3();
+        System.out.println(mc.makeChocolate(small, big, goal));
         //create Scanner type object
         //Write a prompt to ask a user to enter small integer, big integer, and
         // goal integer.
@@ -17,7 +24,20 @@ private Scanner sc;
 
     }
 
+
     //(2)create a method name readNumber as we practiced on Thursday in class.
+    public int readNumber()
+    {
+        return sc.nextInt();
+    }
+    public int readNumber2()
+    {
+        return sc.nextInt();
+    }
+    public int readNumber3()
+    {
+        return sc.nextInt();
+    }
 
     //(3)
 
@@ -35,6 +55,38 @@ private Scanner sc;
      * @return
      */
     public int makeChocolate(int small, int big, int goal) {
+        int sumBig = big*5;
+        int smallNeeded = 0;
+        int remainder = goal - sumBig;
+        if(remainder>small)
+        {
+            smallNeeded = -1;
+        }
+        else if (remainder >= 0 && remainder<=small)
+        {
+            smallNeeded = remainder;
+        }
+        else if (remainder<0 && goal>4)
+        {
+            remainder = goal -5;
+            if (remainder>small)
+            {
+                smallNeeded = -1;
+            }
+            else
+            {
+                smallNeeded = remainder;
+            }
+        }
+        else if(remainder<0 && goal<=4)
+        {
+            smallNeeded = goal;
+        }
+        else
+        {
+            remainder = -1;
+        }
+        return smallNeeded;
         //complete here
     }
 
