@@ -34,15 +34,16 @@ public class DiceSum {
     public static void main(String[] args) {
         DiceSum ds = new DiceSum();
         ds.sc = new Scanner(System.in);
-        System.out.println("Please enter a desired sum.");
-        int desiredSum = ds.desiredSum();
-        if (desiredSum > 12) {
-            System.out.println("Please enter a different number.");
-        }
-        else
-        {
-            ds.diceSum(desiredSum);
-        }
+        //System.out.println("Please enter a desired sum.");
+        ds.diceSum();
+//        int desiredSum = ds.desiredSum(ds.sc);
+//        if (desiredSum > 12) {
+//            System.out.println("Please enter a different number.");
+//        }
+//        else
+//        {
+//            ds.diceSum(desiredSum);
+//        }
     }
 
     /**
@@ -55,9 +56,12 @@ public class DiceSum {
      * Then, this method will return that integer value.
      * Write only up to three lines
      */
-    public int desiredSum() {
+    public int desiredSum(Scanner input) {
         //complete here
-        return sc.nextInt();
+        System.out.print("Desired dice sum: ");
+        int number = input.nextInt();
+        return number;
+       // return sc.nextInt();
     }
 
     /**
@@ -69,16 +73,17 @@ public class DiceSum {
      * Then,  then repeatedly rolls two six-sided dice until their sum is the
      * desired sum. Here is the expected dialogue with the user:
      */
-    public void diceSum(int desiredSum) {
+    public void diceSum() {
 
         java.util.Random r = new java.util.Random();
-        int num1 = r.nextInt(1,6);
-        int num2 = r.nextInt(1,6);
+        int number = desiredSum(sc);
+//        int num1 = r.nextInt(1,6);
+//        int num2 = r.nextInt(1,6);
         int sum = 0;
-        while (num1 + num2 != desiredSum)
+        while (number != sum)
         {
-            num1 = r.nextInt(1,6);
-            num2 = r.nextInt(1,6);
+           int num1 = r.nextInt(1,6); //bound value is not inclusive  - fix this
+           int num2 = r.nextInt(1,6); //bound value is not inclusive - fix this
             sum = num1 + num2;
             System.out.println(num1 + " and " + num2 + " = " + sum);
         }
