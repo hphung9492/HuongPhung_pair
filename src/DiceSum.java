@@ -1,5 +1,8 @@
 /**
- * Huong, make sure complete here.
+ * Class: DiceSum.java
+ * author: Huong Phung
+ * version: 1.0
+ * description:  This method will take the user's input of a desired sum and roll two 6-sided dice until their sum is the desired sum
  *
  */
 /**
@@ -34,16 +37,14 @@ public class DiceSum {
     public static void main(String[] args) {
         DiceSum ds = new DiceSum();
         ds.sc = new Scanner(System.in);
-        //System.out.println("Please enter a desired sum.");
-        ds.diceSum();
-//        int desiredSum = ds.desiredSum(ds.sc);
-//        if (desiredSum > 12) {
-//            System.out.println("Please enter a different number.");
-//        }
-//        else
-//        {
-//            ds.diceSum(desiredSum);
-//        }
+        int desiredSum = ds.desiredSum(ds.sc);
+        if (desiredSum > 12 || desiredSum<=1) {
+            System.out.println("Please enter a different number.");
+        }
+        else
+        {
+            ds.diceSum(desiredSum);
+        }
     }
 
     /**
@@ -58,10 +59,9 @@ public class DiceSum {
      */
     public int desiredSum(Scanner input) {
         //complete here
-        System.out.print("Desired dice sum: ");
+        System.out.println("Please enter desired sum.");
         int number = input.nextInt();
         return number;
-       // return sc.nextInt();
     }
 
     /**
@@ -73,20 +73,19 @@ public class DiceSum {
      * Then,  then repeatedly rolls two six-sided dice until their sum is the
      * desired sum. Here is the expected dialogue with the user:
      */
-    public void diceSum() {
+    public void diceSum(int desiredSum) {
 
         java.util.Random r = new java.util.Random();
-        int number = desiredSum(sc);
-//        int num1 = r.nextInt(1,6);
-//        int num2 = r.nextInt(1,6);
-        int sum = 0;
-        while (number != sum)
+        int num1 = r.nextInt(1,7);
+        int num2 = r.nextInt(1,7);
+        int sum = num1 + num2;
+        while (sum != desiredSum)
         {
-           int num1 = r.nextInt(1,6); //bound value is not inclusive  - fix this
-           int num2 = r.nextInt(1,6); //bound value is not inclusive - fix this
             sum = num1 + num2;
             System.out.println(num1 + " and " + num2 + " = " + sum);
+            num1 = r.nextInt(1,7);
+            num2 = r.nextInt(1,7);
         }
-        //complete here
+
     }
 }
