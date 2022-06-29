@@ -38,7 +38,7 @@ public class DiceSum {
         DiceSum ds = new DiceSum();
         ds.sc = new Scanner(System.in);
         int desiredSum = ds.desiredSum(ds.sc);
-        if (desiredSum > 12 || desiredSum<=1) {
+        if (desiredSum > 12 || desiredSum <= 1) {
             System.out.println("Please enter a different number.");
         }
         else
