@@ -1,0 +1,13 @@
+Great job, Huong!
+This time you will develop the second version.
+This time you will revise this program based on the followings.
+
+1) create a quarter-arrays for each team. This array's length is 4.
+    each element of the quarter will store the total scores earned
+
+2) use ArrayList<Integer> to add scores for each quarter. Once the user enters the
+Next quarter, it will stop adding scores to the previous quarter.
+3) you will need to total all scores entered then you will add that score to the
+The array above(1).
+
+Keep the rule the same, but this time you will use Arrays and ArrayList<Integer>
