@@ -318,10 +318,10 @@ public class FootBall {
         String winner = "";
         if (totalGGC > totalGAtech)
         {
-            winner = "The winner is GGC with " + totalGGC;
+            winner = "GGC defeated GA Tech by a score of " + totalGGC + " to " + totalGAtech;
         }
         else {
-            winner = "The winner is GA Tech with " + totalGAtech;
+            winner = "GA Tech defeated GGC by a score of " + totalGAtech + " to " + totalGGC;
         }
         return winner;
     }
