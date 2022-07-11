@@ -1,0 +1,4 @@
+1. Use Object Oriented Program to design Football game
+2. Create Football class (template) - attributes may include teamName, quarters,
+scores, etc.
+3. Create FootballTester class(tester/driver)
