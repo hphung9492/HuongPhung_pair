@@ -64,8 +64,8 @@ public class FootBall {
      * @param b
      * @param c
      * @param d
-     * @return score of each quarter for the team 1.
-     * description:
+     * @return total scores for each quarter of team 1
+     * description: this method calculates the total scores of each quarter of team 1 and stores them in an array
      */
     public int[] t1 (ArrayList<Integer> a, ArrayList<Integer> b, ArrayList<Integer> c, ArrayList<Integer> d)
     {
@@ -88,6 +88,16 @@ public class FootBall {
         }
         return t1;
     }
+    
+    /**
+     * method: t2
+     * @param a
+     * @param b
+     * @param c
+     * @param d
+     * @return total scores of each quarter of team 2
+     * description: this method calculates the total scores of each quarter of team 2 and stores them in an array
+     */
     public int[] t2 (ArrayList<Integer> a, ArrayList<Integer> b, ArrayList<Integer> c, ArrayList<Integer> d)
     {
         int[] t2 = new int[4];
@@ -109,6 +119,17 @@ public class FootBall {
         }
         return t2;
     }
+    
+    /**
+     * method: winner
+     * @param team1
+     * @param team2
+     * @param nums1
+     * @param nums2
+     * @return a string that declares the winner and the total scores of the teams
+     * description: this method determines the winner of the game based on the total scores
+     * and prints out a message to declare the winner
+     */
     public String winner (String team1, String team2, int[] nums1, int[] nums2)
     {
         String winner = "";
