@@ -63,6 +63,13 @@ public class Main {
         System.out.println(fb.winner(team1,team2, t1, t2));
 
     }
+    /**
+     * method: t1q1
+     * @param in
+     * @return the scores of quarter 1 of team 1
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the first quarter of team 1
+     */
     public ArrayList<Integer> t1q1 (Scanner in)
     {
         ArrayList<Integer> t1q1 = new ArrayList<>();
@@ -83,6 +90,14 @@ public class Main {
         }
         return t1q1;
     }
+
+    /**
+     * method: t1q2
+     * @param in
+     * @return the scores of quarter 2 of team 1
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the second quarter of team 1
+     */
     public ArrayList<Integer> t1q2 (Scanner in)
     {
         ArrayList<Integer> t1q2 = new ArrayList<>();
@@ -103,6 +118,14 @@ public class Main {
         }
         return t1q2;
     }
+
+    /**
+     * method: t1q3
+     * @param in
+     * @return scores of quarter 3 of team 1
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the third quarter of team 1
+     */
     public ArrayList<Integer> t1q3 (Scanner in)
     {
         ArrayList<Integer> t1q3 = new ArrayList<>();
@@ -123,6 +146,14 @@ public class Main {
         }
         return t1q3;
     }
+
+    /**
+     * method: t1q4
+     * @param in
+     * @return scores of quarter 4 of team 1
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the fourth quarter of team 1
+     */
     public ArrayList<Integer> t1q4 (Scanner in)
     {
         ArrayList<Integer> t1q4 = new ArrayList<>();
@@ -143,6 +174,14 @@ public class Main {
         }
         return t1q4;
     }
+
+    /**
+     * method: t2q1
+     * @param in
+     * @return scores of quarter 1 of team 2
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the first quarter of team 2
+     */
     public ArrayList<Integer> t2q1 (Scanner in)
     {
         ArrayList<Integer> t2q1 = new ArrayList<>();
@@ -163,6 +202,14 @@ public class Main {
         }
         return t2q1;
     }
+
+    /**
+     * method: t2q2
+     * @param in
+     * @return scores of quarter 2 of team 2
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the second quarter of team 2
+     */
     public ArrayList<Integer> t2q2 (Scanner in)
     {
         ArrayList<Integer> t2q2 = new ArrayList<>();
@@ -183,6 +230,14 @@ public class Main {
         }
         return t2q2;
     }
+
+    /**
+     * method: t2q3
+     * @param in
+     * @return scores of quarter 3 of team 2
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the third quarter of team 2
+     */
     public ArrayList<Integer> t2q3 (Scanner in)
     {
         ArrayList<Integer> t2q3 = new ArrayList<>();
@@ -203,6 +258,14 @@ public class Main {
         }
         return t2q3;
     }
+
+    /**
+     * method: t2q4
+     * @param in
+     * @return scores of the fourth quarter of team 2
+     * description: this method takes the input from the user and stores it in an array list
+     * as scores for the fourth quarter of team 2
+     */
     public ArrayList<Integer> t2q4 (Scanner in)
     {
         ArrayList<Integer> t2q4 = new ArrayList<>();
