@@ -58,6 +58,15 @@ public class FootBall {
         return "Please enter the score ";
     }
 
+    /**
+     * method: t1
+     * @param a
+     * @param b
+     * @param c
+     * @param d
+     * @return score of each quarter for the team 1.
+     * description:
+     */
     public int[] t1 (ArrayList<Integer> a, ArrayList<Integer> b, ArrayList<Integer> c, ArrayList<Integer> d)
     {
         int[] t1 = new int[4];
