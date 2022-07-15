@@ -1,5 +1,7 @@
 package FootBallGame4;
 
+import java.util.ArrayList;
+
 public class FootBall {
   int total1;
     int total2;
